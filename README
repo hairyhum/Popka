@@ -1,0 +1,21 @@
+# MIDI music generator
+
+Using markov chains to reorder notes in midi music files, creating new melodies.
+
+## Usage
+
+`bin/Popkadurak -f <source file> -p <pattern files> -d <dearch depth>`
+
+where 
+- `source file` - basic melody and rythm structure (midi file)
+- `pattern files` - comma separated list of midi files to create markov chain
+- `search depth` - markov chain search depth (less depth - more random melody)
+
+### Example
+`bin/Popkadurak -f my_melody.mid -p melody1.mid,melody2.mid,melody3.mid -d 15`
+
+## Build from source
+
+`make` - requires `cabal`
+
+
